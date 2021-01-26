@@ -27,17 +27,17 @@ ul {
 }
 
 .navbar-brand {
-  margin: 0;
+  display: block;
 }
 
-.navbar-brand a {
-  display: block;
+.navbar-brand h1 {
+  position: absolute;
+  text-indent: -9999px;
+}
+
+.navbar-brand img {
   width: 100px;
   height: 100px;
-  background-image: url("https://images.vexels.com/media/users/3/142020/isolated/lists/57c9a9b3b4fdd07cc52898e52d64cea7-vendido-vermelho-arredondado.png");
-  background-size: cover;
-  background-position: center center;
-  text-indent: -9999px;
 }
 
 .navbar-nav {
