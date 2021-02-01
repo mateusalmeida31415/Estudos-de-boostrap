@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+
+    // Formatação visual - cor de fundo e fonte
+    &.navbar-dark{
+        a{
+            color:white;
+        }
+    }
+
+    &.bg-dark{
+        background-color: black;
+    }
+
+    // Formatação da area da logo
+    &-brand{
+        h1{
+            text-indent: -9999px;
+            position: absolute;
+        }
+
+        img{
+            width: 75px;
+        }
+    }
+
+    //Formatação do menu hamburger
+    &-toggler{
+        padding: .25rem .75rem;
+        font-size: 1.25rem;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border: .25rem;
+        &-icon{
+            display: inline-block; //Display da tag span é inline
+            width: 1.5rem;
+            height: 1.5rem;
+            color: white;
+            // vertical-align: middle;
+        }
+    }
+
+    // Disposição do menu de itens
+    .collapse{
+        display: none;
+        &.navbar-collapse{
+            flex-basis: 100%;
+            // align-items: center;
+            // flex-grow: 1;
+        }
+    }
+
+    // Menu de itens
+    .navbar-nav{
+        display: flex;
+        flex-wrap: wrap;
+        .nav-item{
+            .nav-link{
+                display: block;
+                padding: .5rem 1rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px){
+    .navbar-expand-sm{
+        .navbar-toggler{
+            display: none;
+        }
+        .collapse.navbar-collapse{
+            display: initial;
+            flex-basis: auto;
+        }
+    }
+}
