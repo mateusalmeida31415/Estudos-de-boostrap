@@ -47,13 +47,13 @@ a{
         font-size: 1.25rem;
         background-color: transparent;
         border: 1px solid transparent;
-        border: .25rem;
+        border-radius: .25rem;
         &-icon{
             display: inline-block; //Display da tag span é inline
             width: 1.5rem;
             height: 1.5rem;
             color: white;
-            // vertical-align: middle;
+            vertical-align: middle;
         }
     }
 
