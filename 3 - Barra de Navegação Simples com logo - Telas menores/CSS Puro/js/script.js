@@ -1,5 +1,5 @@
-let btn = document.getElementsByClassName('navbar-toggler-icon')
-let hiddenMenu = document.getElementsByClassName('navbar')
+let btn = document.querySelector('.navbar-toggler-icon')
+let hiddenMenu = document.querySelector('.collapse')
 btn.addEventListener('click', () =>{
-    document.hiddenMenu.style.background = '#ffffff'
+    console.log(hiddenMenu.classList.toggle('show'))
 })
