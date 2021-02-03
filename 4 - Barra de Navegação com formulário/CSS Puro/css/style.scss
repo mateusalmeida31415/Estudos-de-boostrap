@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    // Cor da fonte e de fundo
+    &.navbar-dark{
+        a{
+            color: white;
+        }
+    }
+    &.bg-dark{
+        background-color: black;
+    }
+
+    // logo
+    &-brand{
+        h1{
+            text-indent: -9999px;
+            position: absolute;
+        }
+        img{
+            width: 75px;
+        }
+    }
+
+    //Menu hamburger
+    &-toggler{
+        padding: .25px .75px;
+        font-size: 1.25rem;
+        background-color: transparent;
+        border: 1px solid transparent;
+        &-icon{
+            display: inline-block;
+            color: white;
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    //Container do menu
+    .collapse{
+        display: none;
+        &.navbar-collapse{
+            flex-basis: 100%;
+        }
+        &.show{
+          display: initial;  
+        }
+    }
+
+    // menu de itens
+    .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .nav-item{
+            .nav-link{
+                display: block;
+                padding: .5rem 1rem;
+                text-align: center;
+            }
+        }
+    }
+
+    //Formulário
+    .form-inline{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 576px){
+    .navbar-expand-sm{
+        .navbar-toggler{
+            display: none;
+        }
+        .collapse{
+            display: flex;
+            &.navbar-collapse{
+                flex-basis: auto;
+            }
+        }
+        .navbar-nav{
+            flex-direction: row;
+        }
+    }
+}

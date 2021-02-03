@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Barra de navegação com formulário</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <h1>Chalé Hotel</h1>
+            <img src="https://images.vexels.com/media/users/3/142020/isolated/lists/57c9a9b3b4fdd07cc52898e52d64cea7-vendido-vermelho-arredondado.png" alt="logo">
+        </a>
+        <button class="navbar-toggler">
+            <span class="navbar-toggler-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </span>
+        </button>
+        <div class="collapse navbar-collapse d-flex">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contatos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Fotos</a></li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control" type="text" name="pesquisado" id="pesquisa" placeholder="Pesquisar...">
+                <button class="btn btn-outline-sucess">OK</button>
+            </form>
+        </div>
+    </nav>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
