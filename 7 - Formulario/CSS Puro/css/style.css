@@ -1,0 +1,57 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+
+form {
+  margin: .5rem 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group .form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: .25rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  margin-right: 2px;
+}
+
+.form-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-inline .form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: .25rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  margin-right: 2px;
+}
+/*# sourceMappingURL=style.css.map */
