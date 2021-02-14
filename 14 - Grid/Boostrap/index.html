@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>Bootstrap - Configurações do grid</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+
+    <div class="container bg-info border border-dark">
+      
+      <h2>Largura fixa</h2>
+
+      <div class="row">
+        <div class="col bg-primary border border-danger">Primeiro</div>
+        <div class="col bg-primary border border-danger">Segundo</div>
+        <div class="col bg-primary border border-danger">Terceiro</div>
+        <div class="col bg-primary border border-danger">Quarto</div>
+      </div>
+
+      <h2>Largura automática (auto-layout)</h2>
+      <div class="row">
+        <div class="col bg-primary border border-danger">Primeiro</div>
+        <div class="col bg-primary border border-danger">Segundo</div>
+        <div class="col-6 bg-primary border border-danger">Terceiro</div>
+      </div>
+
+      <h2>Largura igual empilhada</h2>
+      <div class="row">
+        <div class="col-sm-6 bg-primary border border-danger">Primeiro</div>
+        <div class="col-sm-6 bg-primary border border-danger">Segundo</div>
+      </div>
+
+      <h2>Ordenando</h2>
+      <div class="row">
+        <div class="col-4 bg-primary border-danger order-3">Primeiro</div>
+        <div class="col-4 bg-primary border-danger order-1">Segundo</div>
+        <div class="col-4 bg-primary border-danger order-2">Terceiro</div>
+      </div>
+      <h2>offset</h2>
+      <div class="row">
+        <div class="col-sm-6 bg-primary border border-danger offset-3">Primeiro</div>
+      </div>   
+      <h2>offset múltiplos alinhamentos</h2>
+      <div class="row">
+        <div class="col-sm-3 bg-primary border border-danger offset-2">Primeiro</div>
+        <div class="col-sm-3 bg-primary border border-danger offset-3">Segundo</div>
+      </div>
+
+      <h2>Aninhamento</h2>
+      <div class="row">
+        <div class="col-sm-6 bg-primary border border-danger">
+          <div class="row">
+            <div class="col-sm-6 bg-light border border-dark">Caixa</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
