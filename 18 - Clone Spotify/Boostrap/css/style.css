@@ -1,0 +1,36 @@
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+body {
+  background-image: url("../imagens/capa.png"), url("../imagens/ruido.png"), linear-gradient(50deg, #ff4169, #7c26f8);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#principal {
+  height: 100vh;
+}
+
+#principal a {
+  color: white;
+  border-radius: 4rem;
+}
+
+#principal a:nth-child(1) {
+  background-color: #7c26f8;
+  border: none;
+}
+
+#principal a:nth-child(1):hover {
+  background-color: white;
+  color: #7c26f8;
+}
+
+#principal a:nth-child(2):hover {
+  background-color: #7c26f8;
+  border: 1px solid transparent;
+}
+/*# sourceMappingURL=style.css.map */
