@@ -15,32 +15,32 @@
     <link rel="icon" href="imagens/favicon.png">
 
     <!--Arquivo CSS Externo-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>Spotify</title>
   </head>
   <body>
     <header class="fixed-top"> <!-- Início Cabeçalho -->
-      <nav class="navbar navbar-expand-md navbar-dark">
+      <nav class="navbar navbar-expand-md">
         <div class="container">
 
           <a href="" class="navbar-brand"> <!--Início Logo Spotify-->
-            <img width="142" src="imagens/spotify.svg" alt="Logo Spotify">
+            <img width="142" src="./imagens/spotify.svg" alt="Logo Spotify">
           </a><!--Fim Logo Spotify-->
           
-          <button class="navbar-toggler border border-light" data-toggle="collapse" data-target="#navegacao"> <!--Início Butão Hamburger-->
+          <button class="navbar-toggler border border-light navbar-dark" data-toggle="collapse" data-target="#navegacao"> <!--Início Butão Hamburger-->
             <span class="navbar-toggler-icon"></span>
           </button> <!-- Fim Butão Hamburger-->
 
           <div class="collapse navbar-collapse" id="navegacao"> <!-- Hidden menu -->
             
             <ul class="navbar-nav ml-auto"> <!-- Início Barra de navegação -->
-              <li class="nav-item"><a href="#" class="nav-link text-white font-weight-bold">Premium</a></li>
-              <li class="nav-item"><a href="#" class="nav-link text-white font-weight-bold">Ajuda</a></li>
-              <li class="nav-item"><a href="#" class="nav-link text-white font-weight-bold">Baixar</a></li>
-              <li class="nav-item"><a href="#" class="nav-link text-white font-weight-bold d-md-block d-none disabled">|</a></li>
-              <li class="nav-item"><a href="#" class="nav-link text-white font-weight-bold">Inscreva-se</a></li>
-              <li class="nav-item"><a href="#" class="nav-link text-white font-weight-bold">Entrar</a></li>
+              <li class="nav-item"><a href="#" class="nav-link font-weight-bold">Premium</a></li>
+              <li class="nav-item"><a href="#" class="nav-link font-weight-bold">Ajuda</a></li>
+              <li class="nav-item"><a href="#" class="nav-link font-weight-bold">Baixar</a></li>
+              <li class="nav-item"><a href="#" class="nav-link font-weight-bold d-md-block d-none disabled disabled-hover">|</a></li>
+              <li class="nav-item"><a href="#" class="nav-link font-weight-bold">Inscreva-se</a></li>
+              <li class="nav-item"><a href="#" class="nav-link font-weight-bold">Entrar</a></li>
             </ul> <!-- Fim Barra de navegação -->
 
           </div>
@@ -49,18 +49,60 @@
     </header> <!-- Fim Cabeçalho -->
 
     <section id="principal" class="d-flex align-items-center">
-      <div class="container text-center">
-        <h1 class="display-3 text-white font-weight-bold">Músicas para todos.</h1>
-        <div class="row justify-content-center justify-content-end">
-          <div class="col-md-4 d-flex justify-content-center">
-            <a href="#" class="btn w-100">Aproveite o Spotify Free</a>
-          </div>
-          <div class="col-md-4">
-            <a href="#" class="btn btn-outline-light ml-2 w-100">Aproveite o Spotify Free</a>
-          </div>
-        </div>
-      </div>
+      <div class="container text-center"><!-- CONTAINER -->
+        <h1 class="display-4 text-white font-weight-bold">Músicas para todos.</h1>
+        <div class="row"> <!-- ROW -->
+
+          <div class="col-md-6 col-12 d-md-flex justify-content-end d-block"> <!--COL-->
+            <a href="#" class="btn w-75 first-btn">Obter spotify Premium</a>
+          </div><!-- / COL -->
+
+          <div class="col-md-6 col-12 d-md-flex justify-content-start d-block mt-md-0 mt-2"><!-- COL-->
+            <a href="#" class="btn btn-outline-light w-75 second-btn">Aproveite o Spotify Free</a>
+          </div><!-- / COL -->
+
+        </div><!-- / ROW-->
+      </div><!-- / CONTAINER -->
     </section>
+
+    <section id="sobre" class="bg-light"> <!-- Início sobre -->
+      <div class="container"> <!-- Container -->
+        <div class="row"> <!--ROW-->
+
+          <div class="col-md-6 d-flex flex-wrap justify-content-center align-items-center my-4 title-color"> <!--COL-->
+
+              <div class="col-md-6"> <!--COL-->
+                <img class="img-fluid my-2" src="imagens/img1.jpg" alt="">
+              </div><!-- / COL-->
+
+              <div class="col-md-6"> <!--COL-->
+                <img class="img-fluid my-2"src="imagens/img2.jpg" alt="">
+              </div><!-- / COL-->
+
+              <div class="col-md-6"> <!--COL-->
+                <img class="img-fluid my-2" src="imagens/img3.jpg" alt="">
+              </div><!-- / COL-->
+
+              <div class="col-md-6"> <!--COL-->
+                <img class="img-fluid my-2" src="imagens/img4.jpg" alt="">
+              </div><!-- / COL-->
+
+          </div> <!-- / COL-->
+
+          <div class="col-md-6 my-4 title-color"><!-- Início Texto sobre -->
+            <h2 class="display-4">O que o Spotify tem?</h2>
+            <h3>Músicas</h3>
+            <p>O Spotify tem milhões de músicas. Escute seus sons favoritos, descubra novas músicas e reúna seus favoritos em um só lugar.</p>
+            <h3>Playlists</h3>
+            <p>No Spotify você encontra uma playlist para cada momento. Todas feitas por fanáticos e especialistas da música.</p>
+            <h3>Novos lançamentos</h3>
+            <p>Escute os novos lançamentos de singles e álbuns da semana e veja o que está bombando no Top 50.</p>
+          </div> <!-- Fim Texto sobre -->
+
+        </div><!-- / ROW-->
+      </div><!-- / Container -->
+
+    </section><!-- Fim sobre -->
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->

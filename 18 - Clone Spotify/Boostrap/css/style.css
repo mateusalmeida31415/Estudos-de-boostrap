@@ -1,7 +1,3 @@
-header {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
 body {
   background-image: url("../imagens/capa.png"), url("../imagens/ruido.png"), linear-gradient(50deg, #ff4169, #7c26f8);
   background-repeat: no-repeat;
@@ -10,27 +6,67 @@ body {
   background-attachment: fixed;
 }
 
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+header button.navbar-toggler span.navbar-toggler-icon {
+  color: white;
+}
+
+header .navbar-nav .nav-link {
+  color: white;
+}
+
+header .navbar-nav .nav-link:hover {
+  color: #7c26f8;
+  -webkit-transition: all 3s linear;
+  transition: all 3s linear;
+}
+
+header .navbar-nav .nav-link.disabled-hover {
+  color: white;
+  -webkit-transition: all 3s linear;
+  transition: all 3s linear;
+}
+
 #principal {
   height: 100vh;
+}
+
+#principal h1 {
+  font-size: 3.5rem;
 }
 
 #principal a {
   color: white;
   border-radius: 4rem;
+  text-transform: uppercase;
 }
 
-#principal a:nth-child(1) {
+#principal a.first-btn {
   background-color: #7c26f8;
   border: none;
 }
 
-#principal a:nth-child(1):hover {
+#principal a.first-btn:hover {
   background-color: white;
   color: #7c26f8;
 }
 
-#principal a:nth-child(2):hover {
+#principal a.second-btn:hover {
   background-color: #7c26f8;
   border: 1px solid transparent;
+}
+
+#sobre .title-color h2, #sobre .title-color h3 {
+  color: #7c25f8;
+  font-weight: bold;
+}
+
+@media (min-width: 576px) {
+  #principal h1 {
+    font-size: 5.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
