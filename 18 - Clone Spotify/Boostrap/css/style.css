@@ -35,7 +35,7 @@ header .navbar-nav .nav-link.disabled-hover {
 }
 
 #principal h1 {
-  font-size: 3.5rem;
+  font-size: 3.5em;
 }
 
 #principal a {
@@ -61,6 +61,27 @@ header .navbar-nav .nav-link.disabled-hover {
 
 #sobre .title-color h2, #sobre .title-color h3 {
   color: #7c25f8;
+  font-weight: bold;
+}
+
+#recursos > div {
+  padding: 20px;
+}
+
+#recursos h2 {
+  color: white;
+  font-size: 3.5rem;
+}
+
+#recursos h3 {
+  color: #9bf0e1;
+}
+
+#recursos p {
+  color: white;
+}
+
+#recursos h2, #recursos h3 {
   font-weight: bold;
 }
 
