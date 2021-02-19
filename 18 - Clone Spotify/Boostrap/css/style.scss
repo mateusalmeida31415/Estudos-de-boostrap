@@ -7,6 +7,7 @@ body{
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 header{
@@ -76,7 +77,8 @@ header{
 
 #recursos{
     &>div{
-        padding: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
 
     h2{
@@ -90,10 +92,65 @@ header{
 
     p{
         color: white;
+
     }
 
     h2, h3{
         font-weight: bold;
+    }
+
+    .rotated{
+        transform: rotate(25deg);
+        padding: 40px;
+        overflow: hidden;
+    }
+}
+
+#rodape{
+    padding: 40px 0;
+    background-color: black;
+    position: relative;
+    z-index: 10000;
+    a{
+        color: white;
+        font-size: .9rem;
+    }
+
+    h4{
+        color: rgba(255, 255, 255, .4);
+        font-size: .9rem;
+        font-weight: bold;
+
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 20px;
+        
+    }
+
+    ul.nav-icons{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    div.logo-rodape-box{
+        justify-content: center;
+    }
+}
+@media (max-width: 576px){
+    #principal{
+        h1{
+            font-size: 5.5rem;
+        }
+    }
+    
+    #rodape{
+        h4{
+            padding-top: 20px;
+        }
     }
 }
 
@@ -103,4 +160,6 @@ header{
             font-size: 5.5rem;
         }
     }
+    
 }
+
