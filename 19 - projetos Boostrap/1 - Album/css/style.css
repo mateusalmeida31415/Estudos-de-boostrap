@@ -1,0 +1,12 @@
+header .logo-style {
+  font-weight: bold;
+}
+
+header .hidden-menu {
+  padding: 2rem;
+}
+
+header h4, header p {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
