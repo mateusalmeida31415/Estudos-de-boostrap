@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <title>Carousel Slider</title>
+  </head>
+  <body style="padding-bottom: 80px;">
+    
+    <div class="container"><!--Container -->
+      <div class="row"><!--Row -->
+        <div class="col-sm-8 m-auto"><!--col-sm8 -->
+          
+          <h1>Slider simples</h1>
+          <div class="carousel slide" data-ride="carousel" id="slide-imgs">
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/imagem1.jpeg" alt="" class="img-fluid">
+              </div>
+              <div class="carousel-item">
+                <img src="img/imagem2.jpeg" alt="" class="img-fluid">
+              </div>
+              <div class="carousel-item">
+                <img src="img/imagem3.jpeg" alt="" class="img-fluid">
+              </div>
+              <div class="carousel-item">
+                <img src="img/imagem4.jpeg" alt="" class="img-fluid">
+              </div>
+              <div class="carousel-item">
+                <img src="img/imagem5.jpeg" alt="" class="img-fluid">
+              </div>
+            </div>
+
+            <a href="#slide-imgs" class="carousel-control-prev" data-slide="prev" >
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+
+            <a href="#slide-imgs" data-slide="next" class="carousel-control-next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+
+          <h1>Slider com controles</h1>
+
+          <div class="carousel slide" data-ride="carousel" id="slide-imgs-1">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/imagem1.jpeg" alt="" class="img-fluid">
+              </div>
+              <div class="carousel-item">
+                <img src="img/imagem2.jpeg" alt="" class="img-fluid">
+              </div>
+              <div class="carousel-item">
+                <img src="img/imagem3.jpeg" alt="" class="img-fluid">
+              </div>
+              <div class="carousel-item">
+                <img src="img/imagem4.jpeg" alt="" class="img-fluid">
+              </div>
+              <div class="carousel-item">
+                <img src="img/imagem5.jpeg" alt="" class="img-fluid">
+              </div>
+            </div>
+
+            <a href="#slide-imgs-1" class="carousel-control-prev" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#slide-imgs-1" class="carousel-control-next" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+
+            <ul class="carousel-indicators">
+              <li class="active" data-target="#slide-imgs-1" data-slide-to="0"></li>
+              <li data-target="#slide-imgs-1" data-slide-to="1"></li>
+              <li data-target="#slide-imgs-1" data-slide-to="2"></li>
+              <li data-target="#slide-imgs-1" data-slide-to="3"></li>
+              <li data-target="#slide-imgs-1" data-slide-to="4"></li>
+
+            </ul>
+          </div>
+
+          <h1>Slider com controles/indicadores</h1>
+        
+
+          <h1>Slider com legendas</h1>
+          <div class="carousel slide" data-ride="carousel" id="slide-imgs-a">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/imagem1.jpeg" alt="" class="img-fluid">
+                  <div class="carousel-caption">
+                    <div style="background-color: rgba(0, 0, 0, 0.4);">
+                      <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti nesciunt, facilis beatae alias iure corporis laboriosam velit culpa, quos doloribus vel, ratione earum placeat id recusandae nemo repellat fugiat illo.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/imagem2.jpeg" alt="" class="img-fluid">
+                  <div class="carousel-caption">
+                    <div style="background-color: rgba(0, 0, 0, 0.4);">
+                      <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti nesciunt, facilis beatae alias iure corporis laboriosam velit culpa, quos doloribus vel, ratione earum placeat id recusandae nemo repellat fugiat illo.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/imagem3.jpeg" alt="" class="img-fluid">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/imagem4.jpeg" alt="" class="img-fluid">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/imagem5.jpeg" alt="" class="img-fluid">
+                </div>
+            </div>
+
+            <a href="#slide-imgs-a" class="carousel-control-prev" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#slide-imgs-a" class="carousel-control-next" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+
+            <ul class="carousel-indicators">
+              <li class="active" data-target="#slide-imgs-a" data-slide-to="0"></li>
+              <li data-target="#slide-imgs-a" data-slide-to="1"></li>
+              <li data-target="#slide-imgs-a" data-slide-to="2"></li>
+              <li data-target="#slide-imgs-a" data-slide-to="3"></li>
+              <li data-target="#slide-imgs-a" data-slide-to="4"></li>
+            </ul>
+          </div>
+
+        </div><!--/col-sm8 -->
+      </div><!--/Row -->
+    </div><!--/Container -->
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
