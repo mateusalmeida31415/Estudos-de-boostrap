@@ -41,6 +41,11 @@ header{
 
     height: 100vh;
 
+    .carousel-prev-next{
+        width: 5%;
+        font-size: 3rem;
+    }
+     
     h1{
         font-size: 3.5em;
     }
@@ -143,7 +148,7 @@ header{
 @media (max-width: 576px){
     #principal{
         h1{
-            font-size: 5.5rem;
+            font-size: 3.5rem;
         }
     }
     
