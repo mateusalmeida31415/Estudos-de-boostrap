@@ -145,7 +145,9 @@ header{
         justify-content: center;
     }
 }
-@media (max-width: 576px){
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
     #principal{
         h1{
             font-size: 3.5rem;
@@ -159,12 +161,36 @@ header{
     }
 }
 
-@media (min-width: 576px){
+// Small devices (landscape phones, less than 768px)
+@media (min-width: 767.98px) { 
+    #principal{
+        h1{
+            font-size: 4.5rem;
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 991.98px) { 
     #principal{
         h1{
             font-size: 5.5rem;
         }
     }
-    
 }
 
+// Large devices (desktops, less than 1200px)
+@media (min-width: 1199.98px) { 
+    #principal{
+        h1{
+            font-size: 6rem;
+        }
+    }
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (min-width: 1399.98px) {
+
+ }
+          
+          
