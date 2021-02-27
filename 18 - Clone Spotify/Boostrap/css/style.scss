@@ -165,7 +165,13 @@ header{
 @media (min-width: 767.98px) { 
     #principal{
         h1{
-            font-size: 4.5rem;
+            font-size: 3.5rem;
+        }
+    }
+
+    #rodape{
+        ul.nav-icons{
+            flex-direction: column;
         }
     }
 }
@@ -177,6 +183,12 @@ header{
             font-size: 5.5rem;
         }
     }
+
+    #rodape{
+        ul.nav-icons{
+            flex-direction: row;
+        }
+    }
 }
 
 // Large devices (desktops, less than 1200px)
@@ -186,11 +198,17 @@ header{
             font-size: 6rem;
         }
     }
+
+    #rodape{
+        
+    }
 }
 
 // X-Large devices (large desktops, less than 1400px)
 @media (min-width: 1399.98px) {
-
+    #rodape{
+        
+    }
  }
           
           

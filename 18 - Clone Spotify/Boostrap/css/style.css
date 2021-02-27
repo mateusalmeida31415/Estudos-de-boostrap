@@ -157,13 +157,25 @@ header .navbar-nav .nav-link.disabled-hover {
 
 @media (min-width: 767.98px) {
   #principal h1 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
+  }
+  #rodape ul.nav-icons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 @media (min-width: 991.98px) {
   #principal h1 {
     font-size: 5.5rem;
+  }
+  #rodape ul.nav-icons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
