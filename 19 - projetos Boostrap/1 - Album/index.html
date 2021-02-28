@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Arquivo CSS externo -->
     <link rel="stylesheet" href="css/style.css">
     <title>Album</title>
 </head>
 <body>
-    <header> <!-- Inicio Cabeçalho -->
+    <header id="cabecalho"> <!-- Inicio Cabeçalho -->
         <nav class="navbar navbar-dark bg-dark"> <!-- Início Nav -->
             <div class="container"> <!-- Início Container -->
 
                 <!-- Início Logo -->
-                <a class="navbar-brand logo-style" href="#"> 
+                <a class="navbar-brand logo-style d-flex" href="#"> 
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
-                    Album
+                    <strong class="ml-2">Album</strong>
                 </a> 
                 <!-- Fim Logo -->
 
@@ -25,13 +26,18 @@
                 </button>
                 <!-- Fim Botão hamburger -->
 
-                <div class="collapse navbar-collapse hidden-menu" id="navegation">
-                    <div class="row">
+                <!-- Inicio Collapse Menu -->
+                <div class="collapse navbar-collapse hidden-menu" id="navegation"> 
+                    <div class="row"> <!-- Inicio ROW -->
+
+                        <!-- Inicio Texto About -->
                         <div class="col-sm-8">
                             <h4>About</h4>
                             <p>Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
                         </div>
+                        <!-- Fim Texto About -->
 
+                        <!-- Inicio Texto Contato -->
                         <div class="col-sm-4">
                             <h4>Contact</h4>
                             <ul class="navbar-nav">
@@ -40,15 +46,210 @@
                                 <li class="nav-item"><a class="nav-link" href="">Email me</a></li>
                             </ul>
                         </div>
-                    </div>
+                        <!-- Fim Texto Contato -->
+
+                    </div><!-- Fim ROW -->
                 </div>
-                
+                <!-- Fim Collapse Menu -->
+
             </div> <!-- Fim Container -->
         </nav> <!-- Fim Nav -->
     </header> <!-- Fim Cabeçalho -->
 
-    
+    <section id="principal" class="py-4"> <!-- Principal -->
+        <div class="container"> <!-- Container -->
+            <div class="row"> <!-- Row -->
+                <div class="col-sm-8 py-4 m-auto text-center"> <!-- Col -->
+                    <h1>Album example</h1>
+                    <p class="lead">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+                    <p>
+                        <a class="btn btn-primary" href="#">Main call to action</a>
+                        <a class="btn btn-dark" href="#">Secondary action</a>
+                    </p>
+                </div> <!-- / Col -->
+            </div> <!-- / Row -->
+        </div> <!-- / Container -->
+    </section> <!--  / Principal -->
 
+    <section id="conteudo" class="jumbotron"> <!-- Conteudo -->
+        <div class="container"> <!-- Container -->
+
+            <div class="row"> <!-- Row -->
+
+                <div class="col-12 col-md-6 col-lg-4 py-2"> <!-- Col -->
+
+                    <div class="card"> <!-- Card -->
+                        <svg class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button class="btn btn-outline-dark">Wiew</button>
+                                <button class="btn btn-outline-dark">Edit</button>
+                            </div>
+                            <small>9 min</small>
+                        </div> 
+                    </div> <!-- / Card -->
+
+                </div> <!--  / Col -->
+
+                <div class="col-12 col-md-6 col-lg-4 py-2"> <!-- Col -->
+
+                    <div class="card"> <!-- Card -->
+                        <svg class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button class="btn btn-outline-dark">Wiew</button>
+                                <button class="btn btn-outline-dark">Edit</button>
+                            </div>
+                            <small>9 min</small>
+                        </div> 
+                    </div> <!-- / Card -->
+
+                </div> <!-- / Col -->
+
+                <div class="col-12 col-md-6 col-lg-4 py-2"> <!-- Col -->
+
+                    <div class="card"> <!-- Card -->
+                        <svg class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button class="btn btn-outline-dark">Wiew</button>
+                                <button class="btn btn-outline-dark">Edit</button>
+                            </div>
+                            <small>9 min</small>
+                        </div> 
+                    </div> <!-- / Card -->
+ 
+                </div> <!-- / Col -->
+
+                <div class="col-12 col-md-6 col-lg-4 py-2"> <!-- Col -->
+
+                    <div class="card"> <!-- Card -->
+                        <svg class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button class="btn btn-outline-dark">Wiew</button>
+                                <button class="btn btn-outline-dark">Edit</button>
+                            </div>
+                            <small>9 min</small>
+                        </div> 
+                    </div> <!-- / Card -->
+
+                </div> <!--  / Col -->
+
+                <div class="col-12 col-md-6 col-lg-4 py-2"> <!-- Col -->
+
+                    <div class="card"> <!-- Card -->
+                        <svg class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button class="btn btn-outline-dark">Wiew</button>
+                                <button class="btn btn-outline-dark">Edit</button>
+                            </div>
+                            <small>9 min</small>
+                        </div> 
+                    </div> <!-- / Card -->
+
+                </div> <!--  / Col -->
+
+                <div class="col-12 col-md-6 col-lg-4 py-2"> <!-- Col -->
+
+                    <div class="card"> <!-- Card -->
+                        <svg class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button class="btn btn-outline-dark">Wiew</button>
+                                <button class="btn btn-outline-dark">Edit</button>
+                            </div>
+                            <small>9 min</small>
+                        </div> 
+                    </div> <!-- / Card -->
+
+                </div> <!--  / Col -->
+
+                <div class="col-12 col-md-6 col-lg-4 py-2"> <!-- Col -->
+
+                    <div class="card"> <!-- Card -->
+                        <svg class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button class="btn btn-outline-dark">Wiew</button>
+                                <button class="btn btn-outline-dark">Edit</button>
+                            </div>
+                            <small>9 min</small>
+                        </div> 
+                    </div> <!-- / Card -->
+
+                </div> <!--  / Col -->
+
+                <div class="col-12 col-md-6 col-lg-4 py-2"> <!-- Col -->
+
+                    <div class="card"> <!-- Card -->
+                        <svg class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button class="btn btn-outline-dark">Wiew</button>
+                                <button class="btn btn-outline-dark">Edit</button>
+                            </div>
+                            <small>9 min</small>
+                        </div> 
+                    </div> <!-- / Card -->
+
+                </div> <!--  / Col -->
+
+                <div class="col-12 col-md-6 col-lg-4 py-2"> <!-- Col -->
+
+                    <div class="card"> <!-- Card -->
+                        <svg class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button class="btn btn-outline-dark">Wiew</button>
+                                <button class="btn btn-outline-dark">Edit</button>
+                            </div>
+                            <small>9 min</small>
+                        </div> 
+                    </div> <!-- / Card -->
+
+                </div> <!--  / Col -->
+
+            </div> <!-- / Row -->
+
+        </div> <!-- / Container -->
+    </section> <!-- / Conteudo -->
+
+    <footer> <!-- Rodapé -->
+        <div class="container">
+            <p class="d-flex justify-content-between">Album example is © Bootstrap, but please download and customize it for yourself! <a href="#cabecalho">Back to top</a>
+            </p>
+            <p>New to Bootstrap? <a href="https://getbootstrap.com/" target="_blanck">Visit the homepage</a> or read our <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blanck">getting started guide</a>.</p>
+        </div>
+    </footer> <!-- / Rodapé -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
